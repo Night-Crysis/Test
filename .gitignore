@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+
+	long int i;
+	int how;
+	long float n = 1, s, s1 = 1;
+
+	cin>>how;
+
+
+	for (i = 1; i <how; i++)
+	{
+		s = 1 / (2 * n + 1);
+		if (i % 2 != 0)
+		{
+			s = -s;
+		}
+
+		s1 = (s1 + s);
+		n++;
+	}
+	cout<< 4 * s1<<endl;
+
+
+	return 0;
+}
